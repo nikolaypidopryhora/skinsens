@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, , maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Drop-down Navigation</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.leanModal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="header-all container">
+        <div class="header-logo">
+            <div class="inner-container">
+                <span class="logo">
+                    <a href="#">
+                        <img src="full-logo.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <ul class="menu-items flex-container">
+                <li class="general menu-item"><a class="dot" href="index.html">Inicio</a></li>
+                <li class="general menu-item"><a class="dot" href="#">Firmas <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#">BABE</a></li>
+                        <li class="menu-item"><a href="#">COMODYNES</a></li>
+                        <li class="menu-item"><a href="#">dermGO</a></li>
+                        <li class="menu-item"><a href="#">FILORGA</a></li>
+                        <li class="menu-item"><a href="#">GALÉNIC</a></li>
+                        <li class="menu-item"><a href="#">HELIOCARE</a></li>
+                        <li class="menu-item"><a href="#">LA ROCHE-POSAY</a></li>
+                        <li class="menu-item"><a href="#">LaviGor</a></li>
+                        <li class="menu-item"><a href="#">letyAT4</a></li>
+                        <li class="menu-item"><a href="#">LIERAC</a></li>
+                        <li class="menu-item"><a href="#">NATURA SIBERICA</a></li>
+                        <li class="menu-item"><a href="#">one.gen/o.1</a></li>
+                        <li class="menu-item"><a href="#">PHYTO</a></li>
+                        <li class="menu-item"><a href="#">sesderma</a></li>
+                        <li class="menu-item"><a href="#">SINGULADERM</a></li>
+                        <li class="menu-item"><a href="#">SVR</a></li>
+                        <li class="menu-item"><a href="#">URIAGE</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Cursos <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="prof.html">Información profesionales</a></li>
+                        <li class="menu-item"><a href="susana.html">Susana Lopesino</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Galería</a></li>
+                <li class="general menu-item"><a class="dot" href="#">En la red <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="https://www.instagram.com/skinsensdermocosmetica/">Instagram</a>
+                        </li>
+                        <li class="menu-item"><a href="https://www.facebook.com/SkinsensDermocosmetica/">Facebook</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-slider container">
+        <div class="wrap">
+            <div class="all">
+                <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="images/_DSC0014.JPG"></article>
+                                <article><img src="images/_DSC0024.JPG"></article>
+                                <article><img src="images/_DSC0044.JPG"></article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop-info container">
+        <blockquote>
+            Skinsens no es una parafarmacia más… diferenciandonos del resto,  estamos especializados en el tratamiento y cuidado de la piel trabajando sólo con prestigiosas marcas de laboraratorios farmacéuticos. La dermocosmética es por lo tanto nuestra única prioridad.
+            Centramos  todos nuestros esfuerzos y conocimiento en aportar soluciones y resolver las inquietudes y problemas relacionados con la piel.
+            <span><a class="button" id="openModal" href="#test">¿Cómo lo hacemos?</a></span>
+        </blockquote>
+    </div>
+
+    <div id="test">
+        <p>Lo primero y de forma gratuita, analizamos tu piel con la última tecnología 3D para ver cuáles pueden ser tus carencias y/o necesidades. En base a esto te propondremos un tratamiento específico para tí.</p>
+        <p>Desde el primer día hacemos un seguimiento de cada tratamiento recomendado guardando un histórico de la evolución en tu piel, dosis de inicio y crema recomendada en cada determinada ocasión.</p>
+        <p>Esta forma de trabajar ha hecho que en poco más de un año, más de 2000 personas  ya confíen en nosotros  siendo reconocidos por muchos laboratorios como uno de los puntos de venta de mayor éxito en nuestra zona…</p>
+        <p>Somos conscientes de que comprar cosmética no es fácil y que en muchas ocasiones te habrás encontrado nadando en un mar de marcas y que lo que has comprado o te han vendido no ha sido de tu agrado… En Skinsens, queremos que recuperes la confianza tanto en la cosmética de laboratorios farmacéuticos como en quien te la vende… Para ello, nuestra dedicación, formación continua y experiencia, la ponemos a tu disposición para que tu inversión en cosmética tenga su recompensa.</p>
+        <p>Ven a conocernos y entenderás por qué cada vez más gente confía en nosotros…</p>
+    </div>
+
+    <div class="employer-info container row">
+        <div class="text six columns">
+            <p class="history">MI HISTORIA EN EL MUNDO DE LA COSMÉTICA</p>
+            <p class="about">SUSANA LOPESINO</p>
+            <a class="button" href="susana.html">conóceme</a>
+        </div>
+        <div class="foto six columns">
+            <img src="images/_DSC0042.JPG">
+        </div>
+    </div>
+
+    <div class="firms container row">
+        <div class="foto six columns">
+            <img src="images/topialyse_palpebralcc_stilllife_2017-800x.jpg" alt="">
+        </div>
+        <div class="six columns">
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/babe.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/comodynes.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/dermgo.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/filorga.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/galenic.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/heliocare.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/laroche.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/lavigor.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/letiat4.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/lierac.png" alt="">
+                </div>
+                <div class="foto firm natura one-third column">
+                    <img src="firmas/naturasiberica.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/onegen.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/phyto.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/sesderma.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/singuladerm.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="foto firm one-third column">
+                    <img src="firmas/svr.png" alt="">
+                </div>
+                <div class="foto firm one-third column">
+                    <img src="firmas/uriage.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="metods container row">
+        <div class="six columns">
+            <div class="method u-pull-right">
+                <h3>DERMATOLOGIA</h3>
+                <p>Pieles Atopicas</p>
+                <p>Pieles Fragiles & Sensibles</p>
+                <p>Pieles Grasas con Tendencia Acnéica</p>
+                <p>Pieles con Manchas</p>
+                <p>Pieles Peactivas</p>
+            </div>
+        </div>
+        <div class="six columns">
+            <div class="method u-pull-left">
+                <h3>NECESIDADES</h3>
+                <p>Imperfecciones Cutáneas</p>
+                <p>Arrugas</p>
+                <p>Luminosidad</p>
+                <p>Firmeza</p>
+                <p>Hidratación</p>
+                <p>Cuerpo</p>
+                <p>Cabello</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11607.00674962465!2d-1.7919838!3d43.3403849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbb9caca5cb032c!2sSkinsens+Dermocosm%C3%A9tica!5e0!3m2!1sru!2ses!4v1524059349561" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(".header-menu .burger").click(function () {
+        $("ul").slideToggle();
+        $("ul.menu-items ul").css("display", "none");
+    });
+
+    $("ul.menu-items li.menu-item").click(function () {
+        $("ul.menu-items ul").slideUp();
+        $(this).find('ul').slideToggle();
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            $("ul.menu-items").removeAttr('style');
+        }
+    });
+
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+
+        if(height  > 100) {
+            $(".logo img").css({"max-width": "15%"});
+        } else {
+            $(".logo img").css({"max-width": "25%"});
+        }
+    });
+
+    $("#openModal").leanModal();
+
+</script>
+
+</body>
+</html>

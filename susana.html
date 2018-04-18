@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, , maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Drop-down Navigation</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="header-all container">
+        <div class="header-logo">
+            <div class="inner-container">
+                <span class="logo">
+                    <a href="#">
+                        <img src="full-logo.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <ul class="menu-items flex-container">
+                <li class="general menu-item"><a class="dot" href="index.html">Inicio</a></li>
+                <li class="general menu-item"><a class="dot" href="#">Firmas <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#">BABE</a></li>
+                        <li class="menu-item"><a href="#">COMODYNES</a></li>
+                        <li class="menu-item"><a href="#">dermGO</a></li>
+                        <li class="menu-item"><a href="#">FILORGA</a></li>
+                        <li class="menu-item"><a href="#">GALÉNIC</a></li>
+                        <li class="menu-item"><a href="#">HELIOCARE</a></li>
+                        <li class="menu-item"><a href="#">LA ROCHE-POSAY</a></li>
+                        <li class="menu-item"><a href="#">LaviGor</a></li>
+                        <li class="menu-item"><a href="#">letyAT4</a></li>
+                        <li class="menu-item"><a href="#">LIERAC</a></li>
+                        <li class="menu-item"><a href="#">NATURA SIBERICA</a></li>
+                        <li class="menu-item"><a href="#">one.gen/o.1</a></li>
+                        <li class="menu-item"><a href="#">PHYTO</a></li>
+                        <li class="menu-item"><a href="#">sesderma</a></li>
+                        <li class="menu-item"><a href="#">SINGULADERM</a></li>
+                        <li class="menu-item"><a href="#">SVR</a></li>
+                        <li class="menu-item"><a href="#">URIAGE</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Cursos <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="prof.html">Información profesionales</a></li>
+                        <li class="menu-item"><a href="susana.html">Susana Lopesino</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Galería</a></li>
+                <li class="general menu-item"><a class="dot" href="#">En la red <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="https://www.instagram.com/skinsensdermocosmetica/">Instagram</a>
+                        </li>
+                        <li class="menu-item"><a href="https://www.facebook.com/SkinsensDermocosmetica/">Facebook</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cursos container">
+        <h1>PRESENTACIÓN</h1>
+        <hr />
+        <div class="row">
+            <div class="nine columns">
+                <p>Hola, me llamo Susana Lopesino. Si hay una cosa que he aprendido en mis 20 años de profesión dentro del mundo de la cosmética es que la venta de este tipo de productos no es fácil pero sin ninguna duda se puede aprender.</p>
+
+                <p>Mis inicios fueron en el sector de la perfumería y la alta cosmética. Ahí tuve mi primera toma de contacto con el mundo de la piel y empecé mis cursos de formación: morfología y características de la piel, merchandising, técnicas de venta, atención al cliente, formación de formadores, liderazgo…</p>
+
+                <p>Tambien tuve formación independiente de parte de laboratorios como Lancôme, Clarins, Estée Lauder, Biotherm, Siseido, Orlane etc…</p>
+
+                <p>A los pocos años, la cadena de perfumerías para la que trabajaba, apostó por mi perfil para llevar a cabo las nuevas aperturas del desarrollo del negocio. Tras 12 años y 14 puntos de venta a mi cargo dejé el sector de la perfumería para empezar en el de farmacia. Así empezaría una nueva andadura muy similar pero diferente, trabajando 6 años en parafarmacia donde tomaría contacto con las diferentes firmas propias de este sector y llevaría a cabo cursos con Avène, Sensilis, Darphin, Korres, Galénic, Bioderma etc…</p>
+
+                <p>Mi pasión por la cosmética e inquietud, me llevaron a formar parte de un laboratorio farmacéutico, donde durante 4 años, mi principal labor era la de formar a las farmacias del País Vasco que trabajaban nuestra firma.</p>
+
+                <p>A día de hoy, soy la responsable de un centro de dermocosmética especializado en el cuidado de la piel con un modelo de negocio único en la zona.</p>
+                </p>
+            </div>
+            <div class="three columns">
+                <img src="images/done.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(".header-menu .burger").click(function () {
+        $("ul").slideToggle();
+        $("ul.menu-items ul").css("display", "none");
+    });
+
+    $("ul.menu-items li.menu-item").click(function () {
+        $("ul.menu-items ul").slideUp();
+        $(this).find('ul').slideToggle();
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            $("ul").removeAttr('style');
+        }
+    });
+
+</script>
+
+</body>
+</html>

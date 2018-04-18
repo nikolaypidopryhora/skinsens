@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0, , maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Drop-down Navigation</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="header-all container">
+        <div class="header-logo">
+            <div class="inner-container">
+                <span class="logo">
+                    <a href="#">
+                        <img src="full-logo.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <ul class="menu-items flex-container">
+                <li class="general menu-item"><a class="dot" href="index.html">Inicio</a></li>
+                <li class="general menu-item"><a class="dot" href="#">Firmas <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#">BABE</a></li>
+                        <li class="menu-item"><a href="#">COMODYNES</a></li>
+                        <li class="menu-item"><a href="#">dermGO</a></li>
+                        <li class="menu-item"><a href="#">FILORGA</a></li>
+                        <li class="menu-item"><a href="#">GALÉNIC</a></li>
+                        <li class="menu-item"><a href="#">HELIOCARE</a></li>
+                        <li class="menu-item"><a href="#">LA ROCHE-POSAY</a></li>
+                        <li class="menu-item"><a href="#">LaviGor</a></li>
+                        <li class="menu-item"><a href="#">letyAT4</a></li>
+                        <li class="menu-item"><a href="#">LIERAC</a></li>
+                        <li class="menu-item"><a href="#">NATURA SIBERICA</a></li>
+                        <li class="menu-item"><a href="#">one.gen/o.1</a></li>
+                        <li class="menu-item"><a href="#">PHYTO</a></li>
+                        <li class="menu-item"><a href="#">sesderma</a></li>
+                        <li class="menu-item"><a href="#">SINGULADERM</a></li>
+                        <li class="menu-item"><a href="#">SVR</a></li>
+                        <li class="menu-item"><a href="#">URIAGE</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Cursos <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="prof.html">Información profesionales</a></li>
+                        <li class="menu-item"><a href="susana.html">Susana Lopesino</a></li>
+                    </ul>
+                </li>
+                <li class="general menu-item"><a class="dot" href="#">Galería</a></li>
+                <li class="general menu-item"><a class="dot" href="#">En la red <i class="fa fa-sort-desc"></i></a>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="https://www.instagram.com/skinsensdermocosmetica/">Instagram</a>
+                        </li>
+                        <li class="menu-item"><a href="https://www.facebook.com/SkinsensDermocosmetica/">Facebook</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cursos container">
+        <h1>PARA PROFESIONALES</h1>
+        <hr/>
+        <p>
+            Sabemos que el sell-out es mucho más complicado de lo que a priori puede parecer. La gran variedad
+            de firmas, la desconfianza “comprensible “ de nuestros clientes, nuestra falta de conocimiento en
+            ocasiones y muy importante LA CARENCIA DE UNA TÉCNICA DE VENTA en dermocosmética, hace
+            que muchas veces, mucho producto se nos quede en las estanterías e incluso llegue a caducarse...</p>
+        <p> ¿Dónde está el secreto de que unas farmacias o parafarmacias trabajen mejor la dermocosmética que
+            otras? Sin duda en la dedicación que a esta familia le deciden prestar. ¿Es importante conocer el
+            producto que vendemos? Sin duda la respuesta a esta pregunta es un sí rotundo pero, por qué si
+            muchas farmacias cuentan con personal cualificado y en principio preparado no consiguen dar salida al
+            producto?...</p>
+        <p> La respuesta está en la carencia de técnica de venta y una suma de factores añadidos que
+            hay que desarrollar y poner en práctica cada día para que podamos hablar de un comercio de éxito.
+            El cliente no quiere saber cuántas carreras o masters tenemos sino que resolvamos sus problemas y
+            esto se puede aprender...</p>
+        <p> Estamos hablando de cómo identificar a nuestro cliente, cómo debemos
+            tratarle según el perfil que muestre, qué lenguaje debemos utilizar etc... Para ello, en Skinsens hemos
+            creado unos cursos específicos para el sell-out y el sell-in.</p>
+        <p> Ponemos nuestra experiencia a vuestra disposición y realizamos cursos prácticos para desarrollar estas
+            técnicas. Si quieres más información rellena el siguiente formulario y nos pondremos en contacto
+            contigo en la mayor brevedad.
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(".header-menu .burger").click(function () {
+        $("ul").slideToggle();
+        $("ul.menu-items ul").css("display", "none");
+    });
+
+    $("ul.menu-items li.menu-item").click(function () {
+        $("ul.menu-items ul").slideUp();
+        $(this).find('ul').slideToggle();
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            $("ul").removeAttr('style');
+        }
+    });
+
+</script>
+
+</body>
+</html>
