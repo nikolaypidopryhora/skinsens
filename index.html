@@ -90,8 +90,8 @@
                         <div id="overflow">
                             <div class="image">
                                 <article><img src="images/_DSC0014.JPG"></article>
-                                <article><img src="images/_DSC0024.JPG"></article>
-                                <article><img src="images/_DSC0044.JPG"></article>
+                                <article><img src="images/_DSC0015.JPG"></article>
+                                <article><img src="images/IMG_20180419_175722.jpg"></article>
                             </div>
                         </div>
                     </div>
@@ -269,17 +269,15 @@
 
     $(function() {
         var slider = $("#slider"),
-        item = $("> input", slider),
-//        block = $(".slides", slider),
-        pause = 1000,
+        pause = 7000,
         play = true,
         timer;
+        $inputs = slider.find('input');
 
         function sliderAuto() {
-            var i = item.index($(":checked")),
-            i = ++i % item.length;
-            play && item.eq(i).prop({
-                    "checked": true });
+            $next = $inputs.filter(":checked").next('input');
+            if (play && $next.length) {$next.prop('checked', true);}
+            else {$inputs.first().prop('checked', true);}
             timer = window.setTimeout(sliderAuto, pause)
         }
         slider.on("mouseenter", function() {
