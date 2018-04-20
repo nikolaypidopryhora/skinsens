@@ -107,6 +107,7 @@
         $error = ''; // сообщение об ошибке
         $name = ''; // имя отправителя
         $email = ''; // email отправителя
+        $email2 = 'skinsens@skinsens.es';
         $subject = 'Skinsens'; // тема
         $message = ''; // сообщение
         $spamcheck = ''; // проверка на спам
@@ -151,7 +152,7 @@
                 // сообщение
                 $msg = "From : $name \r\ne-Mail : $email \r\nSubject : $subject \r\n\n" . "Message : \r\n$message";
 
-                mail($to, $subject, $msg, "From: $email\r\nReply-To: $email\r\nReturn-Path: $email\r\n");
+                mail($to, $subject, $msg, "From: $email2\r\nReply-To: $email2\r\nReturn-Path: $email2\r\n");
                 ?>
 
                 <!-- Сообщение отправлено! (можете поменять текст)-->
