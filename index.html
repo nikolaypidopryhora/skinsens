@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=1024, initial-scale=1.0, , maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skinsens Dermocosmética</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
+    <link rel="shortcut icon" href="images/navigation/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/navigation/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/skeleton.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="jquery.leanModal.min.js"></script>
+    <script src="js/jquery.leanModal.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
 </head>
@@ -26,7 +26,7 @@
             <div class="inner-container">
                 <span class="logo">
                     <a href="#">
-                        <img src="full-logo.png" alt="">
+                        <img src="images/navigation/full-logo.png" alt="">
                     </a>
                 </span>
             </div>
@@ -61,11 +61,11 @@
                 </li>
                 <li class="general menu-item"><a class="dot" href="#">Cursos <i class="fa fa-sort-desc"></i></a>
                     <ul class="menu-items">
-                        <li class="menu-item"><a href="professionals.html">Información profesionales</a></li>
-                        <li class="menu-item"><a href="about.html">Susana Lopesino</a></li>
+                        <li class="menu-item"><a href="pages/professionals.php">Información profesionales</a></li>
+                        <li class="menu-item"><a href="pages/about.html">Susana Lopesino</a></li>
                     </ul>
                 </li>
-                <li class="general menu-item"><a class="dot" href="gallery.html">Galería</a></li>
+                <li class="general menu-item"><a class="dot" href="pages/gallery.html">Galería</a></li>
                 <li class="general menu-item"><a class="dot" href="#">En la red <i class="fa fa-sort-desc"></i></a>
                     <ul class="menu-items">
                         <li class="menu-item"><a href="https://www.instagram.com/skinsensdermocosmetica/">Instagram</a>
@@ -130,7 +130,7 @@
         <div class="text six columns">
             <p class="history">MI HISTORIA EN EL MUNDO DE LA COSMÉTICA</p>
             <p class="about">SUSANA LOPESINO</p>
-            <a class="button" href="about.html">conóceme</a>
+            <a class="button" href="pages/about.html">conóceme</a>
         </div>
         <div class="foto six columns">
             <img src="images/_DSC0042.JPG">
@@ -266,6 +266,33 @@
     });
 
     $("#openModal").leanModal();
+
+    $(function() {
+        var slider = $("#slider"),
+        item = $("> input", slider),
+//        block = $(".slides", slider),
+        pause = 1000,
+        play = true,
+        timer;
+
+        function sliderAuto() {
+            var i = item.index($(":checked")),
+            i = ++i % item.length;
+            play && item.eq(i).prop({
+                    "checked": true });
+            timer = window.setTimeout(sliderAuto, pause)
+        }
+        slider.on("mouseenter", function() {
+            play = false;
+            window.clearTimeout(timer)
+        });
+        slider.on("mouseleave", function() {
+            play = true;
+            timer = window.setTimeout(sliderAuto, pause)
+        });
+        sliderAuto();
+    });
+
 
 </script>
 

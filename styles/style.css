@@ -294,6 +294,32 @@ blockquote span{
       -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
 }
 
+.contact-form {
+      width: 600px;
+}
+
+.antispam {
+      display: inline;
+}
+
+.user-name {
+      width: 48%;
+}
+
+.user-email {
+      width: 48%;
+      margin-left: 4%;
+}
+
+@media (min-width: 550px) {
+      .six.columns.user-email {
+            width: 48%;
+      }
+      .six.columns.user-name {
+            width: 48%;
+      }
+}
+
 @media(max-width: 768px) {
       .header-menu .burger {
             display: block;
