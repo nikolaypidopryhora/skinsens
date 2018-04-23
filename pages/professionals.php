@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/skeleton.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
@@ -23,7 +22,7 @@
         <div class="header-logo">
             <div class="inner-container">
                 <span class="logo">
-                    <a href="#">
+                    <a href="../index.html">
                         <img src="../images/navigation/full-logo.png" alt="">
                     </a>
                 </span>
@@ -86,7 +85,7 @@
             que muchas veces, mucho producto se nos quede en las estanterías e incluso llegue a caducarse...</p>
         <p> ¿Dónde está el secreto de que unas farmacias o parafarmacias trabajen mejor la dermocosmética que
             otras? Sin duda en la dedicación que a esta familia le deciden prestar. ¿Es importante conocer el
-            producto que vendemos? Sin duda la respuesta a esta pregunta es un sí rotundo pero, por qué si
+            producto que vendemos? Sin duda la respuesta a esta pregunta es un sí rotundo pero ¿Por qué si
             muchas farmacias cuentan con personal cualificado y en principio preparado no consiguen dar salida al
             producto?...</p>
         <p> La respuesta está en la carencia de técnica de venta y una suma de factores añadidos que
@@ -111,19 +110,21 @@
         $subject = 'Skinsens'; // тема
         $message = ''; // сообщение
         $spamcheck = ''; // проверка на спам
+        $tel = '';
 
         if (isset($_POST['send'])) {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $message = $_POST['message'];
             $spamcheck = $_POST['spamcheck'];
+            $tel = $_POST['tel'];
 
             if (trim($name) == '') {
                 $error = '<div class="errormsg">Por favor, introduzca tu nombre</div>';
-            } else if (trim($email) == '') {
-                $error = '<div class="errormsg">¡Por favor, introduzca tu email!</div>';
-            } else if (!isEmail($email)) {
-                $error = '<div class="errormsg">Has introducido un e-mail incorrecto. ¡Por favor corrígelo!</div>';
+            } else if (trim($tel) == '') {
+                $error = '<div class="errormsg">¡Por favor, introduzca tu numero de teléfono!</div>';
+            } else if (!isEmail($tel)) {
+                $error = '<div class="errormsg">Has introducido  incorrecto. ¡Por favor corrígelo!</div>';
             }
             if (trim($subject) == '') {
                 $error = '<div class="errormsg">¡Por favor, introduzca un asunto!</div>';
@@ -180,10 +181,12 @@
                         <input name="name" type="text" class="box u-full-width" id="name" size="30" value="<?= $name; ?>"/>
                     </div>
                     <div class="user-email six columns">
-                        <label><span class="required">*</span> Email: </label>
-                        <input name="email" type="text" class="box u-full-width" id="email" size="30" value="<?= $email; ?>"/>
+                        <label><span class="required">*</span> Tel: </label>
+                        <input name="tel" type="text" class="box u-full-width" id="tel" size="30" value="<?= $tel; ?>"/>
                     </div>
                 </div>
+                <label><span class="required">*</span> Email: </label>
+                <input name="email" type="text" class="box u-full-width" id="email" size="30" value="<?= $email; ?>"/>
                 <label><span class="required">*</span> Mensaje: </label>
                 <textarea class="u-full-width" name="message" cols="40" rows="3" id="message"><?= $message; ?></textarea>
 
@@ -208,6 +211,28 @@
         }
 
         ?>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="six columns">
+                <div class="info">
+                    <h2>Información</h2>
+                    <p>República Argentina 17, Irun</p>
+                    <p>943 10 88 41</p>
+                    <p>687 56 76 96</p>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="info">
+                    <h2>Siganos</h2>
+                    <p>
+                        <a class="link" href="https://www.facebook.com/SkinsensDermocosmetica/"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a class="link" href="https://www.instagram.com/skinsensdermocosmetica/"><i class="fa fa-instagram fa-3x"></i></a>
+                    </p>
+                    <p>skinsens@skinsens.es</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">

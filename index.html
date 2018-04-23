@@ -25,7 +25,7 @@
         <div class="header-logo">
             <div class="inner-container">
                 <span class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/navigation/full-logo.png" alt="">
                     </a>
                 </span>
@@ -112,17 +112,28 @@
 
     <div class="shop-info container">
         <blockquote>
-            Skinsens no es una parafarmacia más… diferenciandonos del resto,  estamos especializados en el tratamiento y cuidado de la piel trabajando sólo con prestigiosas marcas de laboraratorios farmacéuticos. La dermocosmética es por lo tanto nuestra única prioridad.
-            Centramos  todos nuestros esfuerzos y conocimiento en aportar soluciones y resolver las inquietudes y problemas relacionados con la piel.
+            Skinsens no es una parafarmacia más… diferenciandonos del resto, estamos especializados en el tratamiento y
+            cuidado de la piel trabajando sólo con prestigiosas marcas de laboraratorios farmacéuticos. La
+            dermocosmética es por lo tanto nuestra única prioridad.
+            Centramos todos nuestros esfuerzos y conocimiento en aportar soluciones y resolver las inquietudes y
+            problemas relacionados con la piel.
             <span><a class="button" id="openModal" href="#test">¿Cómo lo hacemos?</a></span>
         </blockquote>
     </div>
 
     <div id="test">
-        <p>Lo primero y de forma gratuita, analizamos tu piel con la última tecnología 3D para ver cuáles pueden ser tus carencias y/o necesidades. En base a esto te propondremos un tratamiento específico para tí.</p>
-        <p>Desde el primer día hacemos un seguimiento de cada tratamiento recomendado guardando un histórico de la evolución en tu piel, dosis de inicio y crema recomendada en cada determinada ocasión.</p>
-        <p>Esta forma de trabajar ha hecho que en poco más de un año, más de 2000 personas  ya confíen en nosotros  siendo reconocidos por muchos laboratorios como uno de los puntos de venta de mayor éxito en nuestra zona…</p>
-        <p>Somos conscientes de que comprar cosmética no es fácil y que en muchas ocasiones te habrás encontrado nadando en un mar de marcas y que lo que has comprado o te han vendido no ha sido de tu agrado… En Skinsens, queremos que recuperes la confianza tanto en la cosmética de laboratorios farmacéuticos como en quien te la vende… Para ello, nuestra dedicación, formación continua y experiencia, la ponemos a tu disposición para que tu inversión en cosmética tenga su recompensa.</p>
+        <a href="#" class="modal_close"></a>
+        <p>Lo primero y de forma gratuita, analizamos tu piel con la última tecnología 3D para ver cuáles pueden ser tus
+            carencias y/o necesidades. En base a esto te propondremos un tratamiento específico para tí.</p>
+        <p>Desde el primer día hacemos un seguimiento de cada tratamiento recomendado guardando un histórico de la
+            evolución en tu piel, dosis de inicio y crema recomendada en cada determinada ocasión.</p>
+        <p>Esta forma de trabajar ha hecho que en poco más de un año, más de 2000 personas ya confíen en nosotros siendo
+            reconocidos por muchos laboratorios como uno de los puntos de venta de mayor éxito en nuestra zona…</p>
+        <p>Somos conscientes de que comprar cosmética no es fácil y que en muchas ocasiones te habrás encontrado nadando
+            en un mar de marcas y que lo que has comprado o te han vendido no ha sido de tu agrado… En Skinsens,
+            queremos que recuperes la confianza tanto en la cosmética de laboratorios farmacéuticos como en quien te la
+            vende… Para ello, nuestra dedicación, formación continua y experiencia, la ponemos a tu disposición para que
+            tu inversión en cosmética tenga su recompensa.</p>
         <p>Ven a conocernos y entenderás por qué cada vez más gente confía en nosotros…</p>
     </div>
 
@@ -234,7 +245,31 @@
     </div>
 
     <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11607.00674962465!2d-1.7919838!3d43.3403849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbb9caca5cb032c!2sSkinsens+Dermocosm%C3%A9tica!5e0!3m2!1sru!2ses!4v1524059349561" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11607.00674962465!2d-1.7919838!3d43.3403849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5dbb9caca5cb032c!2sSkinsens+Dermocosm%C3%A9tica!5e0!3m2!1sru!2ses!4v1524059349561"
+                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="six columns">
+                <div class="info">
+                    <h2>Información</h2>
+                    <p>República Argentina 17, Irun</p>
+                    <p>943 10 88 41</p>
+                    <p>687 56 76 96</p>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="info">
+                    <h2>Siganos</h2>
+                    <p>
+                        <a class="link" href="https://www.facebook.com/SkinsensDermocosmetica/"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a class="link" href="https://www.instagram.com/skinsensdermocosmetica/"><i class="fa fa-instagram fa-3x"></i></a>
+                    </p>
+                    <p>skinsens@skinsens.es</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
@@ -255,36 +290,41 @@
         }
     });
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var height = $(window).scrollTop();
 
-        if(height  > 100) {
+        if (height > 100) {
             $(".logo img").css({"max-width": "15%"});
         } else {
             $(".logo img").css({"max-width": "25%"});
         }
     });
 
-    $("#openModal").leanModal();
+    $("#openModal").leanModal({closeButton: ".modal_close"});
 
-    $(function() {
+    $(function () {
         var slider = $("#slider"),
-        pause = 7000,
-        play = true,
-        timer;
+            pause = 7000,
+            play = true,
+            timer;
         $inputs = slider.find('input');
 
         function sliderAuto() {
             $next = $inputs.filter(":checked").next('input');
-            if (play && $next.length) {$next.prop('checked', true);}
-            else {$inputs.first().prop('checked', true);}
+            if (play && $next.length) {
+                $next.prop('checked', true);
+            }
+            else {
+                $inputs.first().prop('checked', true);
+            }
             timer = window.setTimeout(sliderAuto, pause)
         }
-        slider.on("mouseenter", function() {
+
+        slider.on("mouseenter", function () {
             play = false;
             window.clearTimeout(timer)
         });
-        slider.on("mouseleave", function() {
+        slider.on("mouseleave", function () {
             play = true;
             timer = window.setTimeout(sliderAuto, pause)
         });
