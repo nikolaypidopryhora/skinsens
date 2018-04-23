@@ -123,8 +123,8 @@
                 $error = '<div class="errormsg">Por favor, introduzca tu nombre</div>';
             } else if (trim($tel) == '') {
                 $error = '<div class="errormsg">¡Por favor, introduzca tu numero de teléfono!</div>';
-            } else if (!isEmail($tel)) {
-                $error = '<div class="errormsg">Has introducido  incorrecto. ¡Por favor corrígelo!</div>';
+            } else if (!isEmail($email)) {
+                $error = '<div class="errormsg">Has introducido email incorrecto. ¡Por favor corrígelo!</div>';
             }
             if (trim($subject) == '') {
                 $error = '<div class="errormsg">¡Por favor, introduzca un asunto!</div>';
@@ -151,7 +151,7 @@
                 $subject = '[Mensaje mandado por formulario] : ' . $subject;
 
                 // сообщение
-                $msg = "From : $name \r\ne-Mail : $email \r\nSubject : $subject \r\n\n" . "Message : \r\n$message";
+                $msg = "From : $name \r\ne-Mail : $email \r\nTel : $tel \r\nSubject : $subject \r\n\n" . "Message : \r\n$message";
 
                 mail($to, $subject, $msg, "From: $email2\r\nReply-To: $email2\r\nReturn-Path: $email2\r\n");
                 ?>
