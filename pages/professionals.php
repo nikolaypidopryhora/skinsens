@@ -158,7 +158,7 @@
 
                 <!-- Сообщение отправлено! (можете поменять текст)-->
                 <div style="text-align:center;">
-                    <h1>¡Felicitaciones!</h1>
+                    <h1>¡Messaje enviado!</h1>
                     <p>Gracias <b><?= $name; ?></b>, ¡tu mensaje se ha enviado correctamente!</p>
                 </div>
                 <!--End Message Sent-->
